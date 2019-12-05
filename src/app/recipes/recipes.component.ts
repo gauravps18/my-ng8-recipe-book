@@ -11,6 +11,8 @@ import { Recipe } from './recipe.model';
 })
 export class RecipesComponent implements OnInit {
 
+  // All the code in this component is dead now.
+  // Keeping this as it is just for reference.
   selectedRecipe: Recipe;
 
   constructor(private recipeService: RecipeService) { }
