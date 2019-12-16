@@ -21,6 +21,7 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
 
 // App Directives
 import { DropdownDirective } from './shared/dropdown.directive';
+import { PlaceHolderDirective } from './shared/placeholder/placeholder.directive';
 
 // App Services
 import { ShoppingListService } from './shopping-list/shopping-list.service';
@@ -41,11 +42,12 @@ import { AppRoutingModule } from './app-routing.module';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
     LoadingSpinnerComponent,
-    AlertComponent
+    AlertComponent,
+    DropdownDirective,
+    PlaceHolderDirective
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule
   ],
   providers: [ShoppingListService, RecipeService, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AlertComponent]
 })
 export class AppModule { }
