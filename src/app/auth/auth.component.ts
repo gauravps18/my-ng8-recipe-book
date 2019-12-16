@@ -49,4 +49,8 @@ export class AuthComponent {
         // Reste form
         form.reset();
     }
+    
+    onHandleError() {
+        this.error = null;
+    }
 }

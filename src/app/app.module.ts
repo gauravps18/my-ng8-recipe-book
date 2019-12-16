@@ -16,6 +16,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { AlertComponent } from './shared/alert/alert.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner';
 
 // App Directives
@@ -28,7 +29,6 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
 
 // App Modules
 import { AppRoutingModule } from './app-routing.module';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import { from } from 'rxjs';
     DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
